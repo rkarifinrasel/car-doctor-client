@@ -25,7 +25,7 @@ const Checkout = () => {
             sevices_id:_id
 
         }
-        fetch('http://localhost:5000/bookings',{
+        fetch('https://car-doctor-server-co4lgault-rkarifinrasel.vercel.app/bookings',{
           method:'POST',
           headers:{
             'content-type':'application/json'

@@ -37,12 +37,12 @@ const router=createBrowserRouter([
         path:'/checkout/:id',
         element:<Checkout></Checkout>,
 
-      loader:({params})=>fetch(`http://localhost:5000/carsCollection/${params.id}`)
+      loader:({params})=>fetch(`https://car-doctor-server-co4lgault-rkarifinrasel.vercel.app/carsCollection/${params.id}`)
       },
       {
         path:'booking/:id',
         element:<PrivateRouts><Booking></Booking></PrivateRouts>,
-        loader:({params})=>fetch(`http://localhost:5000/carsCollection/${params.id}`)
+        loader:({params})=>fetch(`https://car-doctor-server-co4lgault-rkarifinrasel.vercel.app/carsCollection/${params.id}`)
       },
       {
         path:'bookingitem',

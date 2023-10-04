@@ -10,7 +10,7 @@ const BookingItem = () => {
     const navigate=useNavigate()
 
      
-    const url=`http://localhost:5000/bookings?email=${user?.email}`;
+    const url=`https://car-doctor-server-co4lgault-rkarifinrasel.vercel.app/bookings?email=${user?.email}`;
     useEffect(()=>{
         fetch(url,{
             method:'GET',
@@ -35,7 +35,7 @@ const BookingItem = () => {
     const handleDelete=(id)=>{
         const procced=confirm('Are you sure want to this items delete')
        if(procced){
-        fetch(`http://localhost:5000/bookings/${id}`,{
+        fetch(`https://car-doctor-server-co4lgault-rkarifinrasel.vercel.app/bookings/${id}`,{
             method:'DELETE'
 
         })
@@ -52,7 +52,7 @@ const BookingItem = () => {
     }
 
     const handleUpdate=(id)=>{
-        fetch(`http://localhost:5000/bookings/${id}`,{
+        fetch(`https://car-doctor-server-co4lgault-rkarifinrasel.vercel.app/bookings/${id}`,{
             method:"PUT",
             headers:{
                 'content-type':'application/json'
